@@ -1,0 +1,185 @@
+:root {
+    --light-mode: #eeebeb;
+    --dark-mode: #171823;
+  }
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header::after{
+    width: 100%;
+    height: 50vh;
+    background-image: url("./images/Bitmap.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+.todoList{
+    width: 750px;
+    margin-top: 90px;
+}
+.todoList img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.todo_group{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+}
+.completed{
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px; 
+}
+
+
+.todo_group .todoInput{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left:60px;
+  border: none;
+  border-radius: 10px;
+}
+.todo_group .todoInput:focus{
+  outline: none;
+  }
+
+.todoForm{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.todoUl{
+    background-color: white;
+    /* box-shadow: 1px 1px 3px 2px #FFF; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 6px;
+}
+.todoUl li{
+   width: 100%;
+   padding: 20px 0px ;
+   border-bottom: .1px solid rgb(219, 219, 219) ;
+   border-top: .1px solid rgb(219, 219, 219) ;
+   border-radius: 6px;
+   display: flex;
+   justify-content: space-between;
+   
+}
+.todoUl li span.todo_name{
+    margin-left: 60px;
+}
+.completed{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(138, 136, 136);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.completed:checked{
+    background-image: url("./images/Group\ 4.svg");
+    background-size: cover;
+    border: none;
+}
+body{
+    background-color: var("--light-mode", #eeebeb);
+    height: 100dvh;
+    transition: all .5s ease-in-out;
+    
+}
+
+
+.events i{
+    font-size: 26px;
+}
+.events span{
+   cursor: pointer;
+   padding: 0 15px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+.logo_txt{
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.completedTodo{
+    text-decoration: line-through;
+}
+.dark_light_mode{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    cursor: pointer;
+}
+.light_mode{
+    background-image: url("./images/Combined\ Shape.svg");
+
+}
+.dark_mode{
+    background-image: url("./images/Combined\ Shape.png");
+
+}
+.activeLi{
+    border: none !important;
+    color: white;
+}
+
+.todo__footer{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    padding: 20px 20px !important;
+}
+.todo__footer p, .todo__footer span{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.todo__footer ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    cursor: pointer;
+}
+
+
+.todo__footer ul li{
+    padding: 0 5px;
+    border: none;
+}
+
+.activeTab{
+    color: rgb(93, 127, 238);
+    font-weight: 600;
+}
+
